@@ -14,7 +14,7 @@ public class Mahasiswa27 {
 
     }
 
-    public void tampilIinformasi (){
+    public void tampilInformasi (){
         // System.out.println(nama);
         // System.out.println(nim);
         // System.out.println(kelas);

@@ -13,6 +13,8 @@ public class SLLMain27 {
         Mahasiswa27 mhs3 = new Mahasiswa27("232122201", "Bimon", "2B", 3.8 );
         Mahasiswa27 mhs4 = new Mahasiswa27("242122000", "Alvaro", "1A", 4.0 );
 
+        //Percobaan 2.1
+
         sll.print();
         sll.addFirst(mhs1);
         sll.print();
@@ -23,29 +25,41 @@ public class SLLMain27 {
         sll.print();
 
 
-    //Meminta input dari keyboard
-        System.out.println("=== Tambah Data Mahasiswa dari Keyboard ===");
-        System.out.print("Masukkan NIM   : ");
-        String nim = sc.nextLine();
+    // //Meminta input dari keyboard
+    //     System.out.println("=== Tambah Data Mahasiswa dari Keyboard ===");
+    //     System.out.print("Masukkan NIM   : ");
+    //     String nim = sc.nextLine();
         
-        System.out.print("Masukkan Nama  : ");
-        String nama = sc.nextLine();
+    //     System.out.print("Masukkan Nama  : ");
+    //     String nama = sc.nextLine();
         
-        System.out.print("Masukkan Kelas : ");
-        String kelas = sc.nextLine();
+    //     System.out.print("Masukkan Kelas : ");
+    //     String kelas = sc.nextLine();
         
-        System.out.print("Masukkan IPK   : ");
-        double ipk = sc.nextDouble();
+    //     System.out.print("Masukkan IPK   : ");
+    //     double ipk = sc.nextDouble();
 
-        //Masukkan data dari keyboard tadi ke object Mahasiswa baru
-        Mahasiswa27 mhsBaru = new Mahasiswa27(nim, nama, kelas, ipk);
+    //     //Masukkan data dari keyboard tadi ke object Mahasiswa baru
+    //     Mahasiswa27 mhsBaru = new Mahasiswa27(nim, nama, kelas, ipk);
 
-        // Tambahkan ke dalam Linked List (misalnya kita taruh di akhir)
-        sll.addLast(mhsBaru);
+    //     // Tambahkan ke dalam Linked List (misalnya kita taruh di akhir)
+    //     sll.addLast(mhsBaru);
 
-        // Tampil hasilnya
-        System.out.println("\n--- Isi Linked List Setelah Ditambah ---");
+    //     // Tampil hasilnya
+    //     System.out.println("\n--- Isi Linked List Setelah Ditambah ---");
+    //     sll.print();
+
+    // Percobaan 2.2
+    System.out.println("data index 1: ");
+        sll.getData(1);
+        System.out.println("data mahasiswa an Bimon berada pada index: " + sll.indexOf("Bimon"));
+        System.out.println();
+        
+        sll.removeFirst();
+        sll.removeLast();
         sll.print();
+        sll.removeAt(0);
+        sll.print();    
 
     }
 }
